@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns="http://www.loc.gov/standards/alto/ns-v4#"
-      xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+<?xml version='1.0' encoding='UTF-8'?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/standards/alto/ns-v4#" xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
   <Description>
     <MeasurementUnit>pixel</MeasurementUnit>
     <sourceImageInformation>
@@ -10,168 +8,67 @@
     </sourceImageInformation>
   </Description>
   <Tags>
-    <OtherTag ID="BT16575" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT16576" LABEL="DamageZone" DESCRIPTION="block type DamageZone"/><OtherTag ID="BT16577" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT16578" LABEL="DropCapitalZone" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT16579" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT16581" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT16582" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT16583" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT16584" LABEL="SealZone" DESCRIPTION="block type SealZone"/><OtherTag ID="BT16585" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT24375" LABEL="MainZone-P" DESCRIPTION="block type MainZone-P"/><OtherTag ID="BT24376" LABEL="MainZone-Continued" DESCRIPTION="block type MainZone-Continued"/><OtherTag ID="BT24377" LABEL="MainZone-Signed" DESCRIPTION="block type MainZone-Signed"/><OtherTag ID="BT24378" LABEL="MainZone-Head" DESCRIPTION="block type MainZone-Head"/><OtherTag ID="BT24379" LABEL="GraphicZone-Head" DESCRIPTION="block type GraphicZone-Head"/><OtherTag ID="BT24380" LABEL="GraphicZone-P" DESCRIPTION="block type GraphicZone-P"/><OtherTag ID="BT24381" LABEL="MainZone-Item" DESCRIPTION="block type MainZone-Item"/><OtherTag ID="BT24382" LABEL="TableZone-Head" DESCRIPTION="block type TableZone-Head"/><OtherTag ID="BT24383" LABEL="MainZone-Ab" DESCRIPTION="block type MainZone-Ab"/><OtherTag ID="BT24384" LABEL="MainZone-Dateline" DESCRIPTION="block type MainZone-Dateline"/><OtherTag ID="BT24385" LABEL="GraphicZone-Part" DESCRIPTION="block type GraphicZone-Part"/><OtherTag ID="BT24386" LABEL="MainZone-PStructured" DESCRIPTION="block type MainZone-PStructured"/><OtherTag ID="BT24387" LABEL="MarginTextZone-PLabelled" DESCRIPTION="block type MarginTextZone-PLabelled"/><OtherTag ID="BT24389" LABEL="GraphicZone-Ab" DESCRIPTION="block type GraphicZone-Ab"/><OtherTag ID="BT24390" LABEL="MarginTextZone-ManuscriptAddendum" DESCRIPTION="block type MarginTextZone-ManuscriptAddendum"/><OtherTag ID="BT24392" LABEL="FigureZone" DESCRIPTION="block type FigureZone"/><OtherTag ID="BT24393" LABEL="FigureZone-Head" DESCRIPTION="block type FigureZone-Head"/><OtherTag ID="BT28352" LABEL="MainZone-Address" DESCRIPTION="block type MainZone-Address"/><OtherTag ID="BT28353" LABEL="MainZone-PLabelled" DESCRIPTION="block type MainZone-PLabelled"/><OtherTag ID="BT28354" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT28356" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT28357" LABEL="MainZone-PStyled" DESCRIPTION="block type MainZone-PStyled"/><OtherTag ID="BT28358" LABEL="MarginTextZone-P" DESCRIPTION="block type MarginTextZone-P"/><OtherTag ID="BT28359" LABEL="GraphicZone-Decoration" DESCRIPTION="block type GraphicZone-Decoration"/><OtherTag ID="BT28361" LABEL="MainZone-Maths" DESCRIPTION="block type MainZone-Maths"/><OtherTag ID="BT28438" LABEL="FormZone" DESCRIPTION="block type FormZone"/><OtherTag ID="BT28439" LABEL="MainZone-HeadStructured" DESCRIPTION="block type MainZone-HeadStructured"/><OtherTag ID="BT30091" LABEL="MarginTextZone-Ab" DESCRIPTION="block type MarginTextZone-Ab"/><OtherTag ID="BT30093" LABEL="MarginTextZone-PStructured" DESCRIPTION="block type MarginTextZone-PStructured"/>
+    <OtherTag ID="BT16575" LABEL="MarginTextZone" DESCRIPTION="block type MarginTextZone"/><OtherTag ID="BT16576" LABEL="DamageZone" DESCRIPTION="block type DamageZone"/><OtherTag ID="BT16577" LABEL="DigitizationArtefactZone" DESCRIPTION="block type DigitizationArtefactZone"/><OtherTag ID="BT16578" LABEL="MainZone-DropCapital" DESCRIPTION="block type DropCapitalZone"/><OtherTag ID="BT16579" LABEL="GraphicZone" DESCRIPTION="block type GraphicZone"/><OtherTag ID="BT16581" LABEL="NumberingZone" DESCRIPTION="block type NumberingZone"/><OtherTag ID="BT16582" LABEL="QuireMarksZone" DESCRIPTION="block type QuireMarksZone"/><OtherTag ID="BT16583" LABEL="RunningTitleZone" DESCRIPTION="block type RunningTitleZone"/><OtherTag ID="BT16584" LABEL="SealZone" DESCRIPTION="block type SealZone"/><OtherTag ID="BT16585" LABEL="StampZone" DESCRIPTION="block type StampZone"/><OtherTag ID="BT24375" LABEL="MainZone-P" DESCRIPTION="block type MainZone-P"/><OtherTag ID="BT24376" LABEL="MainZone-Continued" DESCRIPTION="block type MainZone-Continued"/><OtherTag ID="BT24377" LABEL="MainZone-Signed" DESCRIPTION="block type MainZone-Signed"/><OtherTag ID="BT24378" LABEL="MainZone-Head" DESCRIPTION="block type MainZone-Head"/><OtherTag ID="BT24379" LABEL="GraphicZone-Head" DESCRIPTION="block type GraphicZone-Head"/><OtherTag ID="BT24380" LABEL="GraphicZone-P" DESCRIPTION="block type GraphicZone-P"/><OtherTag ID="BT24381" LABEL="MainZone-Item" DESCRIPTION="block type MainZone-Item"/><OtherTag ID="BT24382" LABEL="TableZone-Head" DESCRIPTION="block type TableZone-Head"/><OtherTag ID="BT24383" LABEL="MainZone-Ab" DESCRIPTION="block type MainZone-Ab"/><OtherTag ID="BT24384" LABEL="MainZone-Dateline" DESCRIPTION="block type MainZone-Dateline"/><OtherTag ID="BT24385" LABEL="GraphicZone-Part" DESCRIPTION="block type GraphicZone-Part"/><OtherTag ID="BT24386" LABEL="MainZone-PStructured" DESCRIPTION="block type MainZone-PStructured"/><OtherTag ID="BT24387" LABEL="MarginTextZone-PLabelled" DESCRIPTION="block type MarginTextZone-PLabelled"/><OtherTag ID="BT24389" LABEL="GraphicZone-Ab" DESCRIPTION="block type GraphicZone-Ab"/><OtherTag ID="BT24390" LABEL="MarginTextZone-ManuscriptAddendum" DESCRIPTION="block type MarginTextZone-ManuscriptAddendum"/><OtherTag ID="BT24392" LABEL="FigureZone" DESCRIPTION="block type FigureZone"/><OtherTag ID="BT24393" LABEL="FigureZone-Head" DESCRIPTION="block type FigureZone-Head"/><OtherTag ID="BT28352" LABEL="MainZone-Address" DESCRIPTION="block type MainZone-Address"/><OtherTag ID="BT28353" LABEL="MainZone-PLabelled" DESCRIPTION="block type MainZone-PLabelled"/><OtherTag ID="BT28354" LABEL="TableZone" DESCRIPTION="block type TableZone"/><OtherTag ID="BT28356" LABEL="TitlePageZone" DESCRIPTION="block type TitlePageZone"/><OtherTag ID="BT28357" LABEL="MainZone-PStyled" DESCRIPTION="block type MainZone-PStyled"/><OtherTag ID="BT28358" LABEL="MarginTextZone-P" DESCRIPTION="block type MarginTextZone-P"/><OtherTag ID="BT28359" LABEL="GraphicZone-Decoration" DESCRIPTION="block type GraphicZone-Decoration"/><OtherTag ID="BT28361" LABEL="MainZone-Maths" DESCRIPTION="block type MainZone-Maths"/><OtherTag ID="BT28438" LABEL="FormZone" DESCRIPTION="block type FormZone"/><OtherTag ID="BT28439" LABEL="MainZone-HeadStructured" DESCRIPTION="block type MainZone-HeadStructured"/><OtherTag ID="BT30091" LABEL="MarginTextZone-Ab" DESCRIPTION="block type MarginTextZone-Ab"/><OtherTag ID="BT30093" LABEL="MarginTextZone-PStructured" DESCRIPTION="block type MarginTextZone-PStructured"/>
     <OtherTag ID="LT6926" LABEL="DefaultLine" DESCRIPTION="line type DefaultLine"/><OtherTag ID="LT6927" LABEL="HeadingLine" DESCRIPTION="line type HeadingLine"/><OtherTag ID="LT6928" LABEL="InterlinearLine" DESCRIPTION="line type InterlinearLine"/>
   </Tags>
   <Layout>
-    <Page WIDTH="653"
-          HEIGHT="851"
-          PHYSICAL_IMG_NR="313"
-          ID="eSc_dummypage_">
-      <PrintSpace HPOS="0"
-                  VPOS="0"
-                  WIDTH="653"
-                  HEIGHT="851">
-        <TextBlock HPOS="27"
-                   VPOS="20"
-                   WIDTH="180"
-                   HEIGHT="100"
-                   ID="e2"
-                   TAGREFS="BT24383">
+    <Page WIDTH="653" HEIGHT="851" PHYSICAL_IMG_NR="313" ID="eSc_dummypage_">
+      <PrintSpace HPOS="0" VPOS="0" WIDTH="653" HEIGHT="851">
+        <TextBlock HPOS="27" VPOS="20" WIDTH="180" HEIGHT="100" ID="e2" TAGREFS="BT24383">
           <Shape><Polygon POINTS="27 20 207 20 207 120 27 120"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="23"
-                   VPOS="582"
-                   WIDTH="232"
-                   HEIGHT="22"
-                   ID="e3"
-                   TAGREFS="BT24378">
+        <TextBlock HPOS="23" VPOS="582" WIDTH="232" HEIGHT="22" ID="e3" TAGREFS="BT24378">
           <Shape><Polygon POINTS="23 582 255 582 255 604 23 604"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="33"
-                   VPOS="754"
-                   WIDTH="308"
-                   HEIGHT="44"
-                   ID="e4"
-                   TAGREFS="BT24383">
+        <TextBlock HPOS="33" VPOS="754" WIDTH="308" HEIGHT="44" ID="e4" TAGREFS="BT24383">
           <Shape><Polygon POINTS="33 754 341 754 341 798 33 798"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="538"
-                   VPOS="760"
-                   WIDTH="94"
-                   HEIGHT="54"
-                   ID="e5"
-                   TAGREFS="BT24383">
+        <TextBlock HPOS="538" VPOS="760" WIDTH="94" HEIGHT="54" ID="e5" TAGREFS="BT24383">
           <Shape><Polygon POINTS="538 760 632 760 632 814 538 814"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="542"
-                   VPOS="813"
-                   WIDTH="86"
-                   HEIGHT="18"
-                   ID="e6"
-                   TAGREFS="BT24383">
+        <TextBlock HPOS="542" VPOS="813" WIDTH="86" HEIGHT="18" ID="e6" TAGREFS="BT24383">
           <Shape><Polygon POINTS="542 813 628 813 628 831 542 831"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="12"
-                   VPOS="813"
-                   WIDTH="296"
-                   HEIGHT="22"
-                   ID="e7"
-                   TAGREFS="BT24387">
+        <TextBlock HPOS="12" VPOS="813" WIDTH="296" HEIGHT="22" ID="e7" TAGREFS="BT24387">
           <Shape><Polygon POINTS="12 813 308 813 308 835 12 835"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="408"
-                   VPOS="577"
-                   WIDTH="107"
-                   HEIGHT="27"
-                   ID="e10"
-                   TAGREFS="BT24383">
+        <TextBlock HPOS="408" VPOS="577" WIDTH="107" HEIGHT="27" ID="e10" TAGREFS="BT24383">
           <Shape><Polygon POINTS="408 577 515 577 515 604 408 604"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="536"
-                   VPOS="578"
-                   WIDTH="84"
-                   HEIGHT="27"
-                   ID="e11"
-                   TAGREFS="BT24383">
+        <TextBlock HPOS="536" VPOS="578" WIDTH="84" HEIGHT="27" ID="e11" TAGREFS="BT24383">
           <Shape><Polygon POINTS="536 578 620 578 619 605 536 605"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="29"
-                   VPOS="602"
-                   WIDTH="328"
-                   HEIGHT="57"
-                   ID="e12"
-                   TAGREFS="BT24375">
+        <TextBlock HPOS="29" VPOS="602" WIDTH="328" HEIGHT="57" ID="e12" TAGREFS="BT24375">
           <Shape><Polygon POINTS="29 602 357 602 357 659 29 659"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="28"
-                   VPOS="662"
-                   WIDTH="307"
-                   HEIGHT="43"
-                   ID="e13"
-                   TAGREFS="BT24375">
+        <TextBlock HPOS="28" VPOS="662" WIDTH="307" HEIGHT="43" ID="e13" TAGREFS="BT24375">
           <Shape><Polygon POINTS="28 662 335 662 335 705 28 705"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="360"
-                   VPOS="666"
-                   WIDTH="255"
-                   HEIGHT="48"
-                   ID="e14"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="360" VPOS="666" WIDTH="255" HEIGHT="48" ID="e14" TAGREFS="BT16579">
           <Shape><Polygon POINTS="360 666 615 666 615 714 360 714"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="259"
-                   VPOS="35"
-                   WIDTH="315"
-                   HEIGHT="105"
-                   ID="eSc_textblock_80a77dda"
-                   TAGREFS="BT24378">
+        <TextBlock HPOS="259" VPOS="35" WIDTH="315" HEIGHT="105" ID="eSc_textblock_80a77dda" TAGREFS="BT24378">
           <Shape><Polygon POINTS="259 35 259 140 574 140 574 35"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="23"
-                   VPOS="159"
-                   WIDTH="434"
-                   HEIGHT="410"
-                   ID="eSc_textblock_d39e5640"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="23" VPOS="159" WIDTH="434" HEIGHT="410" ID="eSc_textblock_d39e5640" TAGREFS="BT16579">
           <Shape><Polygon POINTS="23 159 23 569 457 566 457 159"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="478"
-                   VPOS="144"
-                   WIDTH="89"
-                   HEIGHT="83"
-                   ID="eSc_textblock_f85490d1"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="478" VPOS="144" WIDTH="89" HEIGHT="83" ID="eSc_textblock_f85490d1" TAGREFS="BT16579">
           <Shape><Polygon POINTS="478 144 478 227 567 227 567 144"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="537"
-                   VPOS="233"
-                   WIDTH="90"
-                   HEIGHT="76"
-                   ID="eSc_textblock_2011b305"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="537" VPOS="233" WIDTH="90" HEIGHT="76" ID="eSc_textblock_2011b305" TAGREFS="BT16579">
           <Shape><Polygon POINTS="627 233 627 309 537 309 537 233"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="478"
-                   VPOS="318"
-                   WIDTH="89"
-                   HEIGHT="80"
-                   ID="eSc_textblock_a85084dd"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="478" VPOS="318" WIDTH="89" HEIGHT="80" ID="eSc_textblock_a85084dd" TAGREFS="BT16579">
           <Shape><Polygon POINTS="478 318 478 398 567 398 567 318"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="534"
-                   VPOS="407"
-                   WIDTH="96"
-                   HEIGHT="71"
-                   ID="eSc_textblock_02f5847b"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="534" VPOS="407" WIDTH="96" HEIGHT="71" ID="eSc_textblock_02f5847b" TAGREFS="BT16579">
           <Shape><Polygon POINTS="630 407 630 478 534 478 534 407"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="408"
-                   VPOS="527"
-                   WIDTH="61"
-                   HEIGHT="47"
-                   ID="eSc_textblock_c05fb5d1"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="408" VPOS="527" WIDTH="61" HEIGHT="47" ID="eSc_textblock_c05fb5d1" TAGREFS="BT16579">
           <Shape><Polygon POINTS="469 527 469 574 408 574 408 527"/></Shape>
         </TextBlock>
-        <TextBlock HPOS="557"
-                   VPOS="528"
-                   WIDTH="52"
-                   HEIGHT="51"
-                   ID="eSc_textblock_575c89a9"
-                   TAGREFS="BT16579">
+        <TextBlock HPOS="557" VPOS="528" WIDTH="52" HEIGHT="51" ID="eSc_textblock_575c89a9" TAGREFS="BT16579">
           <Shape><Polygon POINTS="557 528 557 579 609 579 609 528"/></Shape>
         </TextBlock>
       </PrintSpace>

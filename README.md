@@ -1,19 +1,39 @@
-# LADAS2-REVIEW
+# Layout Analysis Dataset with SegmOnto (LADaS)
 
-Métriques: 
+[![DOI](https://zenodo.org/badge/726002822.svg)](https://zenodo.org/doi/10.5281/zenodo.10682623) [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
 
-| Subset | Train (P) | Train (Z) | Valid (P) | Valid (Z) | Test (P) | Test (Z) | Total (P) | Total (Z) |
-|--------|----------:|----------:|----------:|----------:|---------:|---------:|----------:|----------:|
-| administrative-reports | 100 | 2525 | 30 | 953 | 99 | 3303 | 229 | 6781 |
-| catalogue | 1072 | 16889 | 265 | 4280 | 100 | 1670 | 1437 | 22839 |
-| fingers | 65 | 739 | 10 | 106 | 45 | 527 | 120 | 1372 |
-| magazine-tech | 330 | 9284 | 70 | 1735 | 122 | 3313 | 522 | 14332 |
-| monographies | 1814 | 19400 | 203 | 1951 | 100 | 792 | 2117 | 22143 |
-| others | 5 | 115 | 1 | 20 | 0 | 0 | 6 | 135 |
-| persee | 947 | 10405 | 173 | 2546 | 137 | 1616 | 1257 | 14567 |
-| picard | 87 | 929 | 6 | 57 | 4 | 140 | 97 | 1126 |
-| roman-19 | 103 | 766 | 36 | 248 | 101 | 762 | 240 | 1776 |
-| theatre | 1050 | 17000 | 169 | 2859 | 118 | 1521 | 1337 | 21380 |
-| these | 597 | 5517 | 94 | 940 | 120 | 1201 | 811 | 7658 |
-| typewriter | 81 | 727 | 9 | 102 | 8 | 69 | 98 | 898 |
-| **TOTAL** | 6251 | 84296 | 1066 | 15797 | 954 | 14914 | 8271 | 115007 |
+LADaS, created by the [ALMANaCH team-project](https://almanach.inria.fr/index-en.html) at Inria,
+continued in partnership with other researchers, is a multidocuments diachronic layout analysis 
+dataset. The dataset comprises 8,287 manually annotated pages spanning 1600--2024, covering both digitised and born-digital documents across diverse genres including magazines, academic papers, monographs, plays, and administrative records. The script in document is mostly Latin script, and language is mostly French with some representation of the main western academic languages. 
+
+### Annotation
+Annotations follow a two-level vocabulary derived from [SegmOnto](https://segmonto.github.io/), extended to paragraph-level semantic regions consistent with the [Text Encoding Initiative (TEI)](https://tei-c.org/), and provide 45 fine-grained classes over 115,007 instances.
+An annotation guide is available [here](https://inria.hal.science/hal-05252327).
+
+A interactive serverless visualisator is available [here](https://github.com/DEFI-COLaF/ladas-visual-documentor) to visualise the data.
+
+### Statistics on the dataset
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/f9de7cca-8ca4-4fd3-b49b-e611d70098e2" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/76ee33c9-a0e6-4c7b-9818-e5428324f4af" />
+
+
+## Structure
+
+The data can be found in `./data`. The data is organised in modular subsets, enabling domain-specific configurations. 
+
+
+
+## Partners
+This project has been orginally established and funded as part of the DEFI COLaF (2023-2027) with help of the European project ATRIUM and FNS-granted project The Geographic Horizon of writers.
+
+## Licence
+
+![68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792f322e302f38387833312e706e67](https://user-images.githubusercontent.com/56683417/115525743-a78d2400-a28f-11eb-8e45-4b6e3265a527.png)
+
+## Citation
+
+See the CITATION.CFF file
+
+## Contact
+
+Thibault Clérice and Juliette Janes (name.surname@inria.fr)

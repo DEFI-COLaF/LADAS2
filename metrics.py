@@ -10,7 +10,7 @@ def metrics_count():
     metrics_zone = {}
     metric_n_page = 0
     metric_n_zone = 0
-    for filename in glob.glob("*/*/*.xml"):
+    for filename in glob.glob("data/*/*/*.xml"):
         if filename!="METS.xml" and 'xml' in filename:
             metric_n_page+=1
             tree = etree.parse(filename)

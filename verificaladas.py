@@ -23,7 +23,7 @@ ns = {"alto":"http://www.loc.gov/standards/alto/ns-v4#"}
 
 @click.command()
 def verificaladas():
-    for filename in glob.glob("*/*/*.xml"):
+    for filename in glob.glob("data/*/*/*.xml"):
         if filename!="METS.xml":
             tree = etree.parse(filename)
             root = tree.getroot()

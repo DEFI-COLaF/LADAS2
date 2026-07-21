@@ -6,6 +6,8 @@ LADaS, created by the [ALMANaCH team-project](https://almanach.inria.fr/index-en
 continued in partnership with other researchers, is a multidocuments diachronic layout analysis 
 dataset. The dataset comprises 8,287 manually annotated pages spanning 1600--2024, covering both digitised and born-digital documents across diverse genres including magazines, academic papers, monographs, plays, and administrative records. The script in document is mostly Latin script, and language is mostly French with some representation of the main western academic languages. 
 
+This repository builds on an [archived repository](https://github.com/DEFI-COLaF/LADaS/) containing the same dataset, which was annotated using an earlier version of the LADaS annotation system.
+
 ### Annotation
 Annotations follow a two-level vocabulary derived from [SegmOnto](https://segmonto.github.io/), extended to paragraph-level semantic regions consistent with the [Text Encoding Initiative (TEI)](https://tei-c.org/), and provide 45 fine-grained classes over 115,007 instances.
 An annotation guide is available [here](https://inria.hal.science/hal-05252327).

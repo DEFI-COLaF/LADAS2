@@ -1,0 +1,182 @@
+project_name: ladas
+exp_name: ladas_train_dfine
+exp: ${exp_name}_${now_dir}
+model_name: l
+task: detect
+train:
+  root: /scratch/jjanes/ladas_train/D-FINE-seg
+  pretrained_dataset: coco
+  pretrained_model_path: pretrained/dfine_${model_name}_${train.pretrained_dataset}.pt
+  imagenet_backbone: false
+  coco_dataset: false
+  data_path: /scratch/jjanes/ladas_train/D-FINE-seg/data/
+  path_to_test_data: /scratch/jjanes/ladas_train/D-FINE-seg/data/test.csv
+  path_to_save: ${train.root}/output/models/${exp}
+  debug_img_path: ${train.root}/output/debug_images
+  eval_preds_path: ${train.root}/output/eval_preds
+  bench_img_path: ${train.root}/output/bench_imgs
+  infer_path: ${train.root}/output/infer
+  use_wandb: false
+  device: cuda
+  label_to_name:
+    0: NumberingZone
+    1: RunningTitleZone
+    2: MainZone-PStructured
+    3: MainZone-Ab
+    4: MainZone-P
+    5: MainZone-Head
+    6: MarginTextZone-Ab
+    7: DigitizationArtefactZone
+    8: MainZone-PLabelled
+    9: MainZone-Continued
+    10: MainZone-Lg
+    11: GraphicZone-Decoration
+    12: MainZone-PStyled
+    13: QuireMarksZone
+    14: MainZone-DropCapital
+    15: TableZone
+    16: TitlePageZone
+    17: MarginTextZone-PLabelled
+    18: MarginTextZone-Continued
+    19: MarginTextZone-P
+    20: MainZone-PQuoted
+    21: StampZone
+    22: GraphicZone
+    23: GraphicZone-P
+    24: MarginTextZone-ManuscriptAddendum
+    25: GraphicZone-Head
+    26: MainZone-Signed
+    27: MainZone-Item
+    28: MainZone-Dateline
+    29: MarginTextZone-PStructured
+    30: TableZone-Head
+    31: MusicZone
+    32: MainZone-HeadStructured
+    33: GraphicZone-Ab
+    34: MainZone-Maths
+    35: GraphicZone-Part
+    36: FigureZone-Head
+    37: FigureZone
+    38: MarginTextZone-PStyled
+    39: text
+    40: MainZone-Address
+    41: FormZone
+    42: FormZone-Head
+    43: MarginTextZone-Lg
+    44: MarginTextZone-PQuoted
+    45: MarginTextZone-Item
+  use_one_class: false
+  ddp:
+    enabled: false
+    n_gpus: 1
+  decision_metrics:
+  - f1
+  - mAP_50
+  - iou
+  img_size:
+  - 640
+  - 640
+  in_channels: 3
+  keep_ratio: false
+  to_visualize_eval: true
+  debug_img_processing: true
+  amp_enabled: true
+  clip_max_norm: 0.1
+  batch_size: 8
+  b_accum_steps: 1
+  epochs: 75
+  max_walltime_min: null
+  early_stopping: 0
+  ignore_background_epochs: 0
+  num_workers: 12
+  mask_batch_size: 150
+  conf_thresh: 0.5
+  iou_thresh: 0.5
+  use_ema: true
+  ema_momentum: 0.9998
+  use_scheduler: true
+  use_muon: true
+  aux_optimizer: adan
+  adan_lr_mult: 5.0
+  adan_betas:
+  - 0.98
+  - 0.92
+  - 0.99
+  base_lr: ${train.lrs.${model_name}.base_lr}
+  backbone_lr: ${train.lrs.${model_name}.backbone_lr}
+  cycler_pct_start: 0.1
+  weight_decay: 0.000125
+  betas:
+  - 0.9
+  - 0.999
+  label_smoothing: 0.0
+  mosaic_augs:
+    mosaic_prob: 0.8
+    no_mosaic_epochs: 5
+    mosaic_scale:
+    - 0.5
+    - 1.5
+    degrees: 0.0
+    translate: 0.2
+    shear: 2.0
+  augs:
+    rotation_degree: 10
+    rotation_p: 0.05
+    multiscale_prob: 0.0
+    rotate_90: 0.05
+    left_right_flip: 0.3
+    up_down_flip: 0.0
+    to_gray: 0.01
+    blur: 0.01
+    gamma: 0.02
+    brightness: 0.02
+    noise: 0.01
+    coarse_dropout: 0.0
+  seed: 42
+  cudnn_fixed: false
+  lrs:
+    'n':
+      backbone_lr: 0.0004
+      base_lr: 0.0008
+    s:
+      backbone_lr: 6.0e-05
+      base_lr: 0.00025
+    m:
+      backbone_lr: 2.0e-05
+      base_lr: 0.00015
+    l:
+      backbone_lr: 1.0e-05
+      base_lr: 0.00016
+    x:
+      backbone_lr: 2.0e-06
+      base_lr: 0.0002
+split:
+  ignore_negatives: false
+  shuffle: true
+  train_split: 0.85
+  val_split: 0.15
+export:
+  from_pretrained: false
+  half: true
+  max_batch_size: 1
+  dynamic_input: false
+  static_formats: null
+  parity: true
+  ov_int8_max_drop: 0.02
+  trt_int8_workspace_gb: 4
+  trt_int8_validate: true
+bench:
+  formats:
+  - torch
+  - tensorrt
+  - onnx
+  - openvino
+  - coreml
+  - litert
+infer:
+  to_crop: true
+  to_track: true
+  paddings:
+    w: 0.05
+    h: 0.05
+now_dir: ${now:%Y-%m-%d}
